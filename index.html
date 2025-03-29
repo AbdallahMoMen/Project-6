@@ -19,7 +19,7 @@
     <!-- ========== NavBar Section ========== -->
 
     <nav class="navbar navbar-expand-lg d-flex sticky-top bg-light">
-      <div class="container">
+      <div class="container position-relative">
         <div class="logo d-flex align-items-center">
           <i class="fa-solid fa-basket-shopping fs-5 me-1"></i>
           <a class="fs-4 fw-bold text-capitalize ms-1" href="./index.html"
@@ -92,18 +92,19 @@
               aria-expanded="false">
               Abdallah MoMen
             </a>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu border-0">
               <li>
-                <a class="dropdown-item trans-03" href="#">Action</a>
+                <a class="dropdown-item trans-03" href="#">Profile</a>
               </li>
               <li>
-                <a class="dropdown-item trans-03" href="#">Another action</a>
+                <a class="dropdown-item trans-03" href="#">Cart</a>
+              </li>
+              <li>
+                <a class="dropdown-item trans-03" href="#">Setting</a>
               </li>
               <li><hr class="dropdown-divider" /></li>
               <li>
-                <a class="dropdown-item trans-03" href="#"
-                  >Something else here</a
-                >
+                <a class="dropdown-item trans-03" href="#">Contact us</a>
               </li>
             </ul>
           </div>
@@ -115,7 +116,7 @@
 
     <!-- ========== Home Section ========== -->
 
-    <section class="home position-relative" id="home">
+    <section class="home position-relative z-2" id="home">
       <div class="container pt-5 px-5 overflow-hidden">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -609,6 +610,36 @@
         </div>
       </div>
     </footer>
+
+    <div class="shopping-cart d-flex gap-3 position-fixed z-3 p-3 trans-03">
+      <div class="head d-flex align-items-center justify-content-between gap-3">
+        <i
+          class="fa-solid fa-x rounded-circle d-flex justify-content-center align-items-center"></i>
+        <span class="text-capitalize text-uppercase fw-semibold fs-4"
+          >cart details</span
+        >
+        <span
+          class="items-count text-capitalize d-flex align-items-center justify-content-center rounded-circle"
+          >0</span
+        >
+      </div>
+      <div class="content text-center flex-grow-1 p-2 text-capitalize">
+        there are no items in your cart
+      </div>
+      <div class="foot d-flex gap-4 align-items-center rounded-3 p-3 fs-5">
+        <i class="fa-solid fa-basket-shopping text-light"></i>
+        <span class="text-uppercase text-center text-light fw-semibold"
+          >checkout</span
+        >
+        <div class="price text-light fw-semibold">
+          EGP <span class="current-price">00.00</span>
+        </div>
+      </div>
+    </div>
+
+    <button class="cart-button position-fixed z-2 rounded-circle">
+      <i class="fa-solid fa-basket-shopping"></i>
+    </button>
 
     <!-- ========== Footer Section ========== -->
 

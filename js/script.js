@@ -21,4 +21,11 @@ $(document).ready(function () {
   $(".like i").on("click", function () {
     $(this).toggleClass("fa-solid");
   });
+
+  $(".navbar-toggler").on("click", function () {
+    $(this).toggleClass("clicked");
+  });
+  $(".shopping-cart i, .cart-button").on("click", function () {
+    $(".shopping-cart").toggleClass("visible");
+  });
 });
