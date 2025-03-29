@@ -18,6 +18,10 @@ var swiper = new Swiper(".home .container", {
 });
 
 $(document).ready(function () {
+  $(".navbar ul > li").on("click", function () {
+    $(this).siblings().removeClass("page");
+    $(this).addClass("page");
+  });
   $(".like i").on("click", function () {
     $(this).toggleClass("fa-solid");
   });
